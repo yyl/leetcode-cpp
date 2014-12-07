@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+#include <vector>
 #include <unordered_map>
 #include "Structure.h"
-#include "flattenBinaryTreetoLinkedList.h"
+#include "triangle.h"
 using namespace std;
 
 int main() {
@@ -39,5 +40,13 @@ int main() {
 //    res.push_back(0);
 ////    cout << s.longestConsecutive(res) << endl;
 //    unordered_map<int, bool> re;
+    vector<vector<int>> tri;
+    vector<int> first = {-1};
+    vector<int> second = {3,2};
+    vector<int> third = {-3,1,-1};
+    tri.push_back(first);
+    tri.push_back(second);
+    tri.push_back(third);
+    cout << s.minimumTotal(tri) <<endl;
     return 0;
 }
